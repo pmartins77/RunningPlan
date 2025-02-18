@@ -1,1 +1,0 @@
-console.log('App.js chargé - Ajoutez ici d'autres fonctionnalités globales si nécessaire.');
