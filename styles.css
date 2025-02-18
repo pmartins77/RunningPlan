@@ -14,20 +14,25 @@ h1 {
 .container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     padding: 20px;
+    margin-bottom: 30px;
 }
 
 img {
-    width: 200px;
+    width: 250px;
     height: auto;
     border-radius: 10px;
 }
 
+nav {
+    margin-bottom: 30px; /* Plus d'espace entre la navigation et les données */
+}
+
 #training-table {
-    width: 70%;
+    width: 80%;
     border-collapse: collapse;
-    margin: 20px auto;
+    margin: 30px auto; /* Plus d'espace autour du tableau */
     background-color: white;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -35,7 +40,7 @@ img {
 
 #training-table th, #training-table td {
     border: 1px solid #ddd;
-    padding: 10px;
+    padding: 15px; /* Augmenter l'espace dans chaque cellule */
     text-align: left;
 }
 
@@ -44,9 +49,13 @@ img {
     color: white;
 }
 
+#training-table td:first-child {
+    padding-right: 20px; /* Ajouter un espace entre la date et le jour */
+}
+
 button {
-    padding: 12px 18px;
-    margin: 10px;
+    padding: 14px 20px;
+    margin: 15px; /* Plus d'espace entre les boutons */
     border: none;
     background-color: #FFD700; /* Jaune doré */
     color: #006400; /* Vert foncé */
