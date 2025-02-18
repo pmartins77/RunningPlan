@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marathon Training Plan</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Calendrier d'Entraînement</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Marathon Training Plan</h1>
-    <img src="running.jpg" alt="Running Image">
-    
-    <nav>
-        <button onclick="changeWeek(-1)">Semaine Précédente</button>
-        <span id="week-title">Semaine 1</span>
-        <button onclick="changeWeek(1)">Semaine Suivante</button>
-    </nav>
+    <h1>Calendrier d'Entraînement</h1>
 
-    <div id="week-days"></div>
-    <div id="training-details"><p>Sélectionnez un jour pour voir les détails</p></div>
+    <div id="calendar-container">
+        <button id="prev-month">◀</button>
+        <h2 id="month-year"></h2>
+        <button id="next-month">▶</button>
+        <div id="calendar"></div>
+    </div>
 
-    <script src="app.js"></script> 
+    <div id="training-details" class="hidden">
+        <h2>Programme du <span id="selected-date"></span></h2>
+        <p id="training-info"></p>
+    </div>
+
+    <script src="app.js"></script>
     <script src="script.js"></script>
-
 </body>
 </html>
