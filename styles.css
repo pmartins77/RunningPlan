@@ -1,0 +1,67 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5dc;
+    text-align: center;
+}
+
+h1 {
+    color: #006400;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#calendar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.day, .empty {
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.day {
+    background-color: #FFD700;
+    color: #006400;
+    cursor: pointer;
+}
+
+.day:hover {
+    background-color: #DAA520;
+}
+
+.hidden {
+    display: none;
+}
+
+#training-details {
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+}
