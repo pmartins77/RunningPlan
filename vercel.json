@@ -1,13 +1,12 @@
 {
   "routes": [
-    { "src": "/marathon-image.jpg", "dest": "/marathon-image.jpg" },
-    { "src": "/app.js", "dest": "/app.js" },
+    { "src": "/running.jpg", "dest": "/running.jpg" },
     { "src": "/(.*)", "dest": "/index.html" }
   ],
   "builds": [
+    { "src": "running.jpg", "use": "@vercel/static" },
     { "src": "index.html", "use": "@vercel/static" },
     { "src": "styles.css", "use": "@vercel/static" },
-    { "src": "app.js", "use": "@vercel/static" },
-    { "src": "marathon-image.jpg", "use": "@vercel/static" }
+    { "src": "app.js", "use": "@vercel/static" }
   ]
 }
