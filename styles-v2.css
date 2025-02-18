@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5dc; /* Fond beige clair */
+    text-align: center;
+}
+
+h1 {
+    color: #006400; /* Vert foncé */
+    text-align: center;
+    margin-bottom: 40px; /* Espacement sous le titre */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 50px; /* Espacement sous l'image */
+}
+
+img {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 15px;
+}
+
+nav {
+    margin-bottom: 40px; /* Espacement entre navigation et tableau */
+}
+
+button {
+    padding: 16px 20px;
+    margin: 10px;
+    border: none;
+    background-color: #FFD700; /* Jaune doré */
+    color: #006400; /* Vert foncé */
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: transform 0.2s ease-in-out, background-color 0.3s;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+    width: 180px; /* Taille uniforme pour boutons */
+}
+
+button:hover {
+    background-color: #daa520; /* Doré plus foncé */
+    transform: scale(1.1); /* Effet d'agrandissement au survol */
+}
+
+#week-days {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Espacement entre les boutons des jours */
+    margin-bottom: 30px;
+}
+
+#training-details {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+}
+
+#training-details h2 {
+    color: #006400;
+}
+
+#training-details p {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+/* Styles pour mobile */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    
+    button {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    #week-days {
+        flex-direction: column;
+    }
+
+    #training-details {
+        width: 95%;
+        padding: 15px;
+    }
+}
