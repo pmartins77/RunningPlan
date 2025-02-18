@@ -1,39 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const plans = [
-        // Semaine 1
-        [
-            { date: "10/02", jour: "Lundi", seance: "Musculation + 30' récup (Z1)" },
-            { date: "11/02", jour: "Mardi", seance: "Fractionné court : 10x300m à 90% VMA (récup 45s)" },
-            { date: "12/02", jour: "Jeudi", seance: "Fractionné long : 3x2000m à allure semi" },
-            { date: "13/02", jour: "Samedi", seance: "Sortie longue 24-28 km" },
-            { date: "14/02", jour: "Dimanche", seance: "Footing récup 12 km" }
-        ],
-        // Semaine 2
-        [
-            { date: "17/02", jour: "Lundi", seance: "Musculation + 30' récup (Z1)" },
-            { date: "18/02", jour: "Mardi", seance: "Fractionné court : 8x400m à 90% VMA (récup 1min)" },
-            { date: "19/02", jour: "Jeudi", seance: "Fractionné long : 4x1500m à allure semi" },
-            { date: "20/02", jour: "Samedi", seance: "Sortie longue 26-30 km" },
-            { date: "21/02", jour: "Dimanche", seance: "Footing récup 10 km" }
-        ],
-        // Semaine 3
-        [
-            { date: "24/02", jour: "Lundi", seance: "Musculation + 30' récup (Z1)" },
-            { date: "25/02", jour: "Mardi", seance: "Fractionné court : 10x400m à 90% VMA (récup 1min)" },
-            { date: "26/02", jour: "Jeudi", seance: "Fractionné long : 3x3000m à allure marathon" },
-            { date: "27/02", jour: "Samedi", seance: "Sortie longue 28-30 km" },
-            { date: "28/02", jour: "Dimanche", seance: "Footing récup 12 km" }
-        ],
-        // Ajouter toutes les autres semaines jusqu'au marathon...
-        // Semaine X (Marathon)
-        [
-            { date: "10/04", jour: "Lundi", seance: "Repos + étirements" },
-            { date: "11/04", jour: "Mardi", seance: "Footing 6 km (Z1)" },
-            { date: "12/04", jour: "Jeudi", seance: "Footing 5 km + 4x100m accélérations" },
-            { date: "13/04", jour: "Samedi", seance: "Repos total" },
-            { date: "14/04", jour: "Dimanche", seance: "Jour du marathon ! Bonne chance ! 🎉" }
-        ]
-    ];
+    const plans = [[{'date': '10/02', 'jour': 'Lundi', 'seance': "Musculation + 30' récup (Z1)"}, {'date': '11/02', 'jour': 'Mardi', 'seance': 'Fractionné court : 10x300m à 90% VMA (récup 45s)'}, {'date': '12/02', 'jour': 'Jeudi', 'seance': 'Fractionné long : 3x2000m à allure marathon'}, {'date': '13/02', 'jour': 'Samedi', 'seance': 'Sortie longue 24-32 km selon la progression'}, {'date': '14/02', 'jour': 'Dimanche', 'seance': 'Footing récup 10-12 km'}], [{'date': '15/02', 'jour': 'Lundi', 'seance': "Musculation + 30' récup (Z1)"}, {'date': '16/02', 'jour': 'Mardi', 'seance': 'Fractionné court : 10x300m à 90% VMA (récup 45s)'}, {'date': '17/02', 'jour': 'Jeudi', 'seance': 'Fractionné long : 3x2000m à allure marathon'}, {'date': '18/02', 'jour': 'Samedi', 'seance': 'Sortie longue 24-32 km selon la progression'}, {'date': '19/02', 'jour': 'Dimanche', 'seance': 'Footing récup 10-12 km'}], [{'date': '20/02', 'jour': 'Lundi', 'seance': "Musculation + 30' récup (Z1)"}, {'date': '21/02', 'jour': 'Mardi', 'seance': 'Fractionné court : 10x300m à 90% VMA (récup 45s)'}, {'date': '22/02', 'jour': 'Jeudi', 'seance': 'Fractionné long : 3x2000m à allure marathon'}, {'date': '23/02', 'jour': 'Samedi', 'seance': 'Sortie longue 24-32 km selon la progression'}, {'date': '24/02', 'jour': 'Dimanche', 'seance': 'Footing récup 10-12 km'}], [{'date': '25/02', 'jour': 'Lundi', 'seance': "Musculation + 30' récup (Z1)"}, {'date': '26/02', 'jour': 'Mardi', 'seance': 'Fractionné court : 10x300m à 90% VMA (récup 45s)'}, {'date': '27/02', 'jour': 'Jeudi', 'seance': 'Fractionné long : 3x2000m à allure marathon'}, {'date': '28/02', 'jour': 'Samedi', 'seance': 'Sortie longue 24-32 km selon la progression'}, {'date': '01/03', 'jour': 'Dimanche', 'seance': 'Footing récup 10-12 km'}], [{'date': '02/03', 'jour': 'Lundi', 'seance': "Musculation + 30' récup (Z1)"}, {'date': '03/03', 'jour': 'Mardi', 'seance': 'Fractionné court : 10x300m à 90% VMA (récup 45s)'}, {'date': '04/03', 'jour': 'Jeudi', 'seance': 'Fractionné long : 3x2000m à allure marathon'}, {'date': '05/03', 'jour': 'Samedi', 'seance': 'Sortie longue 24-32 km selon la progression'}, {'date': '06/03', 'jour': 'Dimanche', 'seance': 'Footing récup 10-12 km'}], [{'date': '07/03', 'jour': 'Lundi', 'seance': "Musculation + 30' récup (Z1)"}, {'date': '08/03', 'jour': 'Mardi', 'seance': 'Fractionné court : 10x300m à 90% VMA (récup 45s)'}, {'date': '09/03', 'jour': 'Jeudi', 'seance': 'Fractionné long : 3x2000m à allure marathon'}, {'date': '10/03', 'jour': 'Samedi', 'seance': 'Sortie longue 24-32 km selon la progression'}, {'date': '11/03', 'jour': 'Dimanche', 'seance': 'Footing récup 10-12 km'}], [{'date': '12/03', 'jour': 'Lundi', 'seance': "Musculation + 30' récup (Z1)"}, {'date': '13/03', 'jour': 'Mardi', 'seance': 'Fractionné court : 10x300m à 90% VMA (récup 45s)'}, {'date': '14/03', 'jour': 'Jeudi', 'seance': 'Fractionné long : 3x2000m à allure marathon'}, {'date': '15/03', 'jour': 'Samedi', 'seance': 'Sortie longue 24-32 km selon la progression'}, {'date': '16/03', 'jour': 'Dimanche', 'seance': 'Footing récup 10-12 km'}], [{'date': '17/03', 'jour': 'Lundi', 'seance': "Musculation + 30' récup (Z1)"}, {'date': '18/03', 'jour': 'Mardi', 'seance': 'Fractionné court : 10x300m à 90% VMA (récup 45s)'}, {'date': '19/03', 'jour': 'Jeudi', 'seance': 'Fractionné long : 3x2000m à allure marathon'}, {'date': '20/03', 'jour': 'Samedi', 'seance': 'Sortie longue 24-32 km selon la progression'}, {'date': '21/03', 'jour': 'Dimanche', 'seance': 'Footing récup 10-12 km'}], [{'date': '22/03', 'jour': 'Lundi', 'seance': "Musculation + 30' récup (Z1)"}, {'date': '23/03', 'jour': 'Mardi', 'seance': 'Fractionné court : 10x300m à 90% VMA (récup 45s)'}, {'date': '24/03', 'jour': 'Jeudi', 'seance': 'Fractionné long : 3x2000m à allure marathon'}, {'date': '25/03', 'jour': 'Samedi', 'seance': 'Sortie longue 24-32 km selon la progression'}, {'date': '26/03', 'jour': 'Dimanche', 'seance': 'Footing récup 10-12 km'}], [{'date': '27/03', 'jour': 'Lundi', 'seance': "Musculation + 30' récup (Z1)"}, {'date': '28/03', 'jour': 'Mardi', 'seance': 'Fractionné court : 10x300m à 90% VMA (récup 45s)'}, {'date': '29/03', 'jour': 'Jeudi', 'seance': 'Fractionné long : 3x2000m à allure marathon'}, {'date': '30/03', 'jour': 'Samedi', 'seance': 'Sortie longue 24-32 km selon la progression'}, {'date': '31/03', 'jour': 'Dimanche', 'seance': 'Footing récup 10-12 km'}], [{'date': '01/04', 'jour': 'Lundi', 'seance': "Musculation + 30' récup (Z1)"}, {'date': '02/04', 'jour': 'Mardi', 'seance': 'Fractionné court : 10x300m à 90% VMA (récup 45s)'}, {'date': '03/04', 'jour': 'Jeudi', 'seance': 'Fractionné long : 3x2000m à allure marathon'}, {'date': '04/04', 'jour': 'Samedi', 'seance': 'Sortie longue 24-32 km selon la progression'}, {'date': '05/04', 'jour': 'Dimanche', 'seance': 'Footing récup 10-12 km'}], [{'date': '06/04', 'jour': 'Lundi', 'seance': "Musculation + 30' récup (Z1)"}, {'date': '07/04', 'jour': 'Mardi', 'seance': 'Fractionné court : 10x300m à 90% VMA (récup 45s)'}, {'date': '08/04', 'jour': 'Jeudi', 'seance': 'Fractionné long : 3x2000m à allure marathon'}, {'date': '09/04', 'jour': 'Samedi', 'seance': 'Sortie longue 24-32 km selon la progression'}, {'date': '10/04', 'jour': 'Dimanche', 'seance': 'Footing récup 10-12 km'}], [{'date': '07/04', 'jour': 'Lundi', 'seance': 'Repos + étirements'}, {'date': '08/04', 'jour': 'Mardi', 'seance': 'Footing 6 km (Z1)'}, {'date': '10/04', 'jour': 'Jeudi', 'seance': 'Footing 5 km + 4x100m accélérations'}, {'date': '12/04', 'jour': 'Samedi', 'seance': 'Repos total'}, {'date': '13/04', 'jour': 'Dimanche', 'seance': 'Jour du marathon ! Bonne chance ! 🎉'}]];
 
     let currentWeek = 0;
 
