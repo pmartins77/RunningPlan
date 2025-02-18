@@ -7,28 +7,18 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Marathon Training Plan</h1>
-        <img src="running.jpg" alt="Running Motivation">
-    </div>
+    <h1>Marathon Training Plan</h1>
+    <img src="running.jpg" alt="Running Image">
+    
     <nav>
-        <button onclick="changeWeek(-1)">⏪ Semaine Précédente</button>
+        <button onclick="changeWeek(-1)">Semaine Précédente</button>
         <span id="week-title">Semaine 1</span>
-        <button onclick="changeWeek(1)">Semaine Suivante ⏩</button>
+        <button onclick="changeWeek(1)">Semaine Suivante</button>
     </nav>
-    <table id="training-table">
-        <thead>
-            <tr>
-                <th>Date</th>
-                <th>Jour</th>
-                <th>Type d'entraînement</th>
-                <th>Échauffement</th>
-                <th>Entraînement</th>
-                <th>Récupération</th>
-            </tr>
-        </thead>
-        <tbody id="training-plan"></tbody>
-    </table>
+
+    <div id="week-days"></div>
+    <div id="training-details"><p>Sélectionnez un jour pour voir les détails</p></div>
+
     <script src="app.js"></script>
 </body>
 </html>
