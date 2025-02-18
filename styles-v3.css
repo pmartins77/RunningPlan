@@ -1,0 +1,114 @@
+@import url('styles-v3.css');
+
+* {
+    all: unset !important;
+    all: revert !important;
+}
+
+body {
+    font-family: Arial, sans-serif !important;
+    margin: 0 !important;
+    padding: 20px !important;
+    background-color: #f5f5dc !important; /* Fond beige clair */
+    text-align: center !important;
+}
+
+h1 {
+    color: #006400 !important; /* Vert foncé */
+    text-align: center !important;
+    margin-bottom: 40px !important; /* Espacement sous le titre */
+}
+
+.container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    padding: 20px !important;
+    margin-bottom: 50px !important; /* Espacement sous l'image */
+}
+
+img {
+    width: 80% !important;
+    max-width: 400px !important;
+    height: auto !important;
+    border-radius: 15px !important;
+}
+
+nav {
+    margin-bottom: 40px !important; /* Espacement entre navigation et tableau */
+}
+
+button {
+    appearance: none !important; /* Désactive les styles natifs */
+    font-size: 18px !important;
+    font-family: Arial, sans-serif !important;
+    font-weight: bold !important;
+    color: #006400 !important; /* Texte vert foncé */
+    background-color: #FFD700 !important; /* Fond jaune doré */
+    border: 2px solid #B8860B !important; /* Bordure dorée foncée */
+    padding: 10px 20px !important;
+    border-radius: 12px !important; /* Coins arrondis */
+    cursor: pointer !important;
+    text-align: center !important;
+    display: inline-block !important;
+    transition: transform 0.2s ease-in-out, background-color 0.3s !important;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2) !important; /* Ombre */
+}
+
+button:hover {
+    background-color: #DAA520 !important; /* Couleur dorée plus foncée au survol */
+    transform: scale(1.1) !important; /* Légère animation au survol */
+}
+
+#week-days {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 10px !important; /* Espacement entre les boutons des jours */
+    margin-bottom: 30px !important;
+}
+
+#training-details {
+    background: white !important;
+    border-radius: 15px !important;
+    padding: 20px !important;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2) !important;
+    width: 80% !important;
+    max-width: 600px !important;
+    margin: auto !important;
+}
+
+#training-details h2 {
+    color: #006400 !important;
+}
+
+#training-details p {
+    font-size: 16px !important;
+    margin: 8px 0 !important;
+}
+
+/* Styles pour mobile */
+@media (max-width: 600px) {
+    body {
+        padding: 10px !important;
+    }
+    
+    button {
+        width: 100% !important;
+        font-size: 16px !important;
+    }
+
+    img {
+        width: 100% !important;
+    }
+
+    #week-days {
+        flex-direction: column !important;
+    }
+
+    #training-details {
+        width: 95% !important;
+        padding: 15px !important;
+    }
+}
