@@ -1,8 +1,8 @@
 @import url('styles-v2.css');
 
 * {
-    all: unset;
-    all: revert;
+    all: unset !important;
+    all: revert !important;
 }
 
 body {
@@ -55,8 +55,8 @@ button {
 }
 
 button:hover {
-    background-color: #daa520 !important; /* Doré plus foncé */
-    transform: scale(1.1) !important; /* Effet d'agrandissement au survol */
+    background-color: #DAA520 !important; /* Couleur dorée plus foncée au survol */
+    transform: scale(1.1) !important; /* Légère animation au survol */
 }
 
 #week-days {
