@@ -1,11 +1,10 @@
 {
-  "builds": [
-    {
-      "src": "index.html",
-      "use": "@vercel/static"
-    }
-  ],
   "routes": [
+    { "src": "/app.js", "dest": "/app.js" },
     { "src": "/(.*)", "dest": "/index.html" }
+  ],
+  "builds": [
+    { "src": "index.html", "use": "@vercel/static" },
+    { "src": "app.js", "use": "@vercel/static" }
   ]
 }
