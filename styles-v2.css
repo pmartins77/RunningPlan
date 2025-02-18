@@ -1,105 +1,112 @@
+@import url('styles-v2.css');
+
+* {
+    all: unset;
+    all: revert;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #f5f5dc; /* Fond beige clair */
-    text-align: center;
+    font-family: Arial, sans-serif !important;
+    margin: 0 !important;
+    padding: 20px !important;
+    background-color: #f5f5dc !important; /* Fond beige clair */
+    text-align: center !important;
 }
 
 h1 {
-    color: #006400; /* Vert foncé */
-    text-align: center;
-    margin-bottom: 40px; /* Espacement sous le titre */
+    color: #006400 !important; /* Vert foncé */
+    text-align: center !important;
+    margin-bottom: 40px !important; /* Espacement sous le titre */
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-    margin-bottom: 50px; /* Espacement sous l'image */
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    padding: 20px !important;
+    margin-bottom: 50px !important; /* Espacement sous l'image */
 }
 
 img {
-    width: 80%;
-    max-width: 400px;
-    height: auto;
-    border-radius: 15px;
+    width: 80% !important;
+    max-width: 400px !important;
+    height: auto !important;
+    border-radius: 15px !important;
 }
 
 nav {
-    margin-bottom: 40px; /* Espacement entre navigation et tableau */
+    margin-bottom: 40px !important; /* Espacement entre navigation et tableau */
 }
 
 button {
-    padding: 16px 20px;
-    margin: 10px;
-    border: none;
-    background-color: #FFD700; /* Jaune doré */
-    color: #006400; /* Vert foncé */
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 12px;
-    transition: transform 0.2s ease-in-out, background-color 0.3s;
-    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
-    width: 180px; /* Taille uniforme pour boutons */
+    padding: 16px 20px !important;
+    margin: 10px !important;
+    border: none !important;
+    background-color: #FFD700 !important; /* Jaune doré */
+    color: #006400 !important; /* Vert foncé */
+    font-size: 18px !important;
+    font-weight: bold !important;
+    cursor: pointer !important;
+    border-radius: 12px !important;
+    transition: transform 0.2s ease-in-out, background-color 0.3s !important;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2) !important;
+    width: 180px !important; /* Taille uniforme pour boutons */
 }
 
 button:hover {
-    background-color: #daa520; /* Doré plus foncé */
-    transform: scale(1.1); /* Effet d'agrandissement au survol */
+    background-color: #daa520 !important; /* Doré plus foncé */
+    transform: scale(1.1) !important; /* Effet d'agrandissement au survol */
 }
 
 #week-days {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px; /* Espacement entre les boutons des jours */
-    margin-bottom: 30px;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 10px !important; /* Espacement entre les boutons des jours */
+    margin-bottom: 30px !important;
 }
 
 #training-details {
-    background: white;
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
-    width: 80%;
-    max-width: 600px;
-    margin: auto;
+    background: white !important;
+    border-radius: 15px !important;
+    padding: 20px !important;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2) !important;
+    width: 80% !important;
+    max-width: 600px !important;
+    margin: auto !important;
 }
 
 #training-details h2 {
-    color: #006400;
+    color: #006400 !important;
 }
 
 #training-details p {
-    font-size: 16px;
-    margin: 8px 0;
+    font-size: 16px !important;
+    margin: 8px 0 !important;
 }
 
 /* Styles pour mobile */
 @media (max-width: 600px) {
     body {
-        padding: 10px;
+        padding: 10px !important;
     }
     
     button {
-        width: 100%;
-        font-size: 16px;
+        width: 100% !important;
+        font-size: 16px !important;
     }
 
     img {
-        width: 100%;
+        width: 100% !important;
     }
 
     #week-days {
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
     #training-details {
-        width: 95%;
-        padding: 15px;
+        width: 95% !important;
+        padding: 15px !important;
     }
 }
