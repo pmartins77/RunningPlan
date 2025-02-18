@@ -1,1 +1,16 @@
-body { font-family: Arial, sans-serif; }
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+#training-plan {
+    margin-top: 20px;
+    text-align: left;
+    display: inline-block;
+}
